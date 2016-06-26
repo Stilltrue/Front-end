@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/login.css">
+        <script src="bootstrap/js/jquery-2.2.4.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <header class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Unicef</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse pull-left" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Schedule <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Homework</a></li>
+                        <li><a href="#">Marks</a></li>
+                        <li><a href="#">Total Marks</a></li>
+                        <li><a href="#">History Journal</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                            <li><a href="#">Edit</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Exit</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </header><!-- /.container-fluid -->
+        </nav>
+        <section class="container main-area">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-md-offset-4">
+                    <div class="account-wall">
+                        <div id="my-tab-content" class="tab-content">
+                            <div class="tab-pane active" id="login">
+                                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                                     alt="">
+                                <form class="form-signin" action="" method="">
+                                    <input type="text" class="form-control" placeholder="Email" required autofocus>
+                                    <input type="password" class="form-control" placeholder="Password" required>
+                                    <input type="submit" class="btn btn-lg btn-default btn-block" value="Sign In" />
+                                </form>
+                                <div id="tabs" data-tabs="tabs">
+                                    <p class="text-center"><a href="#register" data-toggle="tab">Need an Account?</a></p>
+                                    <p class="text-center"><a href="#password" data-toggle="tab">Forgotten password?</a></p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="register">
+                                <form class="form-signin" action="" method="">
+                                    <input type="text" class="form-control" placeholder="User Name ..." required autofocus>
+                                    <input type="email" class="form-control" placeholder="Emaill Address ..." required>
+                                    <input type="password" class="form-control" placeholder="Password ..." required>
+                                    <input type="submit" class="btn btn-lg btn-default btn-block" value="Sign Up" />
+                                </form>
+                                <div id="tabs" data-tabs="tabs">
+                                    <p class="text-center"><a href="#login" data-toggle="tab">Have an Account?</a></p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="password">
+                                <div id="tabs" data-tabs="tabs">
+                                    <div class="media account-select">
+                                        <a href="#user1" data-toggle="tab">
+                                            <div class="pull-left">
+                                                <img class="select-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                                                     alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="select-name">User Name 1</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <hr />
+                                    <div class="media account-select">
+                                        <a href="#user2" data-toggle="tab">
+                                            <div class="pull-left">
+                                                <img class="select-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                                                     alt="">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="select-name">User Name 2</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <hr />
+                                    <p class="text-center"><a href="#login" data-toggle="tab">Back to Login</a></p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="user1">
+                                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                                     alt="">
+                                <h3 class="text-center">User Name 1</h3>
+                                <form class="form-signin" action="" method="">
+                                    <input type="hidden" class="form-control" value="User Name">
+                                    <input type="password" class="form-control" placeholder="Password" autofocus required>
+                                    <input type="submit" class="btn btn-lg btn-default btn-block" value="Sign In" />
+                                </form>
+                                <p class="text-center"><a href="#login" data-toggle="tab">Back to Login</a></p>
+                                <p class="text-center"><a href="#select" data-toggle="tab">Select another Account</a></p>
+                            </div>
+                            <div class="tab-pane" id="user2">
+                                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                                     alt="">
+                                <h3 class="text-center">User Name 2</h3>
+                                <form class="form-signin" action="" method="">
+                                    <input type="hidden" class="form-control" value="User Name">
+                                    <input type="password" class="form-control" placeholder="Password" autofocus required>
+                                    <input type="submit" class="btn btn-lg btn-default btn-block" value="Sign In" />
+                                </form>
+                                <p class="text-center"><a href="#login" data-toggle="tab">Back to Login</a></p>
+                                <p class="text-center"><a href="#select" data-toggle="tab">Select another Account</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bottom-footer container">
+            &copy;
+        </footer>
+    </body>
+</html>

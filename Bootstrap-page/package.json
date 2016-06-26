@@ -1,0 +1,18 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "bootstrap application ..",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "qwe",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-csso": "^2.0.0",
+    "gulp-minify": "0.0.12",
+    "gulp-sass": "^2.3.1"
+  }
+}

@@ -1,0 +1,43 @@
+@import 'mixin';
+@import 'variables';
+
+body {
+  background-color: $qwe;
+  font-size: 14px;
+  @include red-color(3px);
+  .navbar {
+    >.container-fluid {
+      .navbar-header {
+        border: 5px solid red;
+        &:before, &:before {
+          content: 'asdasd';
+        }
+      }
+    }
+  }
+}
+
+footer {
+  @include red-color($widthByDefault);
+  @extend .pull-left;
+  &:before, &:before {
+    content: 'asdasd';
+  }
+}
+
+.pull-left {
+  float: left;
+  @include vendor(border-radius, 10px);
+  @include vendor(transform, translate(20px, 30px));
+}
+
+$one-column: 100% / 12;
+
+@for $i from 1 through 12 {
+  .col-xs-#{$i} {
+    width: $one-column * $i;
+  }
+  .col-lg-#{$i} {
+    width: $one-column * $i;
+  }
+}
