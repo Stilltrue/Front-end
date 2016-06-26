@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+
+.caption {
+  color: #777444;
+  text-align: center;
+  font-size: 350%;
+  display: flex;
+  flex-direction: row;
+}
+
+.mini-caption {
+    color: #777444;
+    text-align: center;
+    font-size: 175%;
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+  background-color: #444444;
+  background-image: url("http://madebest.ru/images/212_87569-2560x1600.jpg");
+  font-family: "Roboto", sans-serif;
+}
+
+
+@keyframes fontSize {
+  0% {
+    font-size : 1.1em;
+  }
+  50% {
+    font-size : 1.3em;
+  }
+  100% {
+    font-size : 1.1em;
+  }
+}
+
+@keyframes color {
+  0% {
+    background-color : #777444;
+  }
+  50% {
+    background-color :#080808;
+  }
+  100% {
+    background-color : #777444;
+  }
+}
+
+time {
+    background-color : #777444;
+    display : flex;
+    flex-direction : row;
+    font-size : 4em;
+    width : 190px;
+    color : #FFFFFF;
+    border-radius: 20px;
+    border : 2px solid #2f4f4f;
+    padding : 10px;
+    /*position: absolute;*/
+    top: 200px;
+}
+
+time:hover {
+   cursor : pointer;
+   animation : color 2s infinite;
+}
+
+.darkslategrey {
+  color : #2f4f4f;
+}
+.white {
+  color : #FFFFFF;
+}
+
+.date {
+  width : 200px;
+}
+.time {
+  width : 250px;
+}
+.full-time{
+  width : 700px;
+}
+.seconds {
+  width : 200px;
+}
+.full-year {
+  width : 350px;
+}
+
+ul {
+  list-style-type: none;
+  display: none;
+  position : absolute;
+  border-radius : 2px;
+}
+
+li{
+  background-color : #777444;
+  width : 150px;
+  font-size : 1.1em;
+  padding : 2px;
+  color : #ffffff;
+  box-shadow : 1px 1px 2px #cfcfcf;
+  
+}
+li:first-child {
+  border-radius: 5px 5px 0px 0px;
+}
+li:last-child {
+  border-radius: 0px 0px 5px 5px;
+}
+li:hover {
+  cursor : pointer;
+  background-color : #ffffff;
+  color: #777444;
+  animation : fontSize 3s infinite;
+/*  transform : scale(1.2);
+*/  border-radius : 3px;
+}
