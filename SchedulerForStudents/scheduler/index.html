@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/jscript.js"></script>
+</head>
+<body>
+<template id="schedule-template-header">
+    <header class="schedule-header">
+        <span class="schedule-date"></span>
+    </header>
+</template>
+
+<template id="schedule-template-article">
+    <article class="schedule-lesson">
+        <div class="remove-lesson">x</div>
+        <ul>
+            <li class="schedule-lesson-name" contenteditable="true"></li>
+            <li class="schedule-lesson-time" contenteditable = "true"></li>
+            <li class="schedule-lesson-room" contenteditable= "true"></li>
+            <li class="schedule-lesson-teacher" contenteditable= "true"></li>
+        </ul>
+    </article>
+</template>
+
+<template id="schedule-template-plus">
+    <div class="plus-lesson"></div>
+</template>
+
+<header>
+    <nav>
+        <ul class="main-menu">
+            <li>My account</li>
+            <li>Schedule</li>
+            <li id="login">login</li>
+        </ul>
+    </nav>
+</header>
+<main class="schedule-main">
+    <section class="schedule-section" id="monday">
+    </section>
+    <section class="schedule-section" id="tuesday">
+    </section>
+    <section class="schedule-section" id="wednesday">
+    </section>
+    <section class="schedule-section" id="thursday">
+    </section>
+    <section class="schedule-section" id="friday">
+    </section>
+</main>
+
+
+
+<div class="login-container hide">
+    <form class="login-form">
+
+        <header class="login-header">
+            <h2>Авторизация</h2>
+            <span>Введите ваш логин и пароль для входа</span>
+        </header>
+
+        <div class="login-content">
+            <legend> <input class="login-input username" placeholder="Логин"/></legend>
+
+            <legend> <input type="password" class="login-input password" placeholder="Пароль"/></legend>
+        </div>
+
+        <footer class="login-footer">
+            <button class="login-button" type="button">ВОЙТИ</button>
+            <button class="login-button" type="button" id="btn-login-close">ЗАКРЫТЬ</button>
+        </footer>
+
+    </form>
+</div>
+<div class="wrapper"> </div>
+
+</body>
+
+</html>
